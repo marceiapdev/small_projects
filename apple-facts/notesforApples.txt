@@ -1,0 +1,51 @@
+NOTES FOR APPLES2APPLES
+
+Section for right text box. 
+"Did you know there are over 7,000 varities of apples? Below you'll see some of the more popular ones. Click on an apple to learn more about them! See how they taste, how and where they're grown, and even some delicious recipes used with them."
+
+*Need clipart of apples.
+
+TYPES OF APPLES FEATURED
+
+APPLE	SWEET %	TART %
+1. Fuji	100	0
+Retains a a very long shelf life, and due to their sweet flavor, they're a great choice for making an apple crisp dish.
+
+
+2. Ambrosia 87.5	12.5
+Another great choice for making apple crisp dishes, but can also be baked into cakes and muffins for a sweeter flavor and more moist texture.
+
+
+3. Gala	75	25
+Best used for applesauce, salad add-ons, and cider drinks. The flavor of sweetness will grow more mild when galas are baked.
+
+
+4. Golden Delicious 62.5	37.5
+Can be used for a wide variety of meals. They can be baked into breads, cakes, tarts, and crisps. Sliced golden apples can also be made into butters and preserves. They're often paired with savory foods like vegetables, cheeses, and pork, and even topped on sandwiches.
+
+
+5. Red Delicious	50	50
+Their skin contains more antioxidants than many other variety of apples. It's better to prepare them fresh as cooking them ruins the solidity of the flesh. However, they can be pureed and slow-cooked for making soups and sauces.
+
+
+6. Honeycrisp	37.5	62.5
+Because they maintain their sweetness when cooked, they can be baked into crisps and pies. Raw honeycrisp apples can be chopped and added to coleslaw, sandwiches, and salads.
+
+
+7. Cripps Pink	25	75
+These apples are sold under the brand name "Pink Lady". Usually simmered in wind and paired with nutmeg, vanilla and cinnamon. Despite having more of a sweet-tart flavor, they can add sweetness to applesauce and purees.
+
+
+8. Granny Smith	0	100
+Well known for their sour, tart taste. A popular treat involves them being dipped in smooth caramel. This variety of apple was named after its founder, Maria Ann "Granny" Smith, when they were discoved in Australia in 1868.
+
+Need a scale to determine the taste of each apple.
+
+Another section for recipes. Pictures for recipes.
+
+
+ANIMATION:
+Apple enlarges and moves to the left. A pop up with the info FADES IN at the right. Make an X appear at the corner of the pop up to reset the choices.
+
+LINK FOR RESOURCES:
+https://specialtyproduce.com/

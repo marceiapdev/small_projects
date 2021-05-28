@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apples Facts</title>
+    <!--FONT FOR HEADER-->
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="applestyles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!--FONT FOR BODY-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <!--SECTION FOR HEADER-->
+<div class="header">
+    <div class="slide2">
+    <div id="title">
+        <header>
+        <h1>apple-facts</h1>
+        </header>
+    </div>
+</div>
+    <div class="slide">
+        <div id="textblock1">
+                <p>Did you know there are over 7,000 varieties of apples? Below you'll see some of the more popular ones. Click on an apple to learn more about them! Discover how they taste and even some delicious recipes used with them.</p>
+        </div>
+    </div>
+</div>
+<!--APPLE GRID-->
+    <div class="applegrid">
+        <div class="apple" id="ambrosia"><img id="amb" src="appleGraphics/ambrosia_web.png" alt="ambrosia_apple"></div>
+        <div class="apple" id="fuji"><img id="fuj" src="appleGraphics/fuji_web.png" alt="fuji_apple"></div>
+        <div class="apple" id="gala"><img id="galApple" src="appleGraphics/gala_web.png" alt="gala_apple"></div>
+        <div class="apple" id="gold"><img id="golden" src="appleGraphics/golden_web.png" alt="golden_apple"></div>
+        <div class="apple" id="granny"><img id="granApp" src="appleGraphics/granny_web.png" alt="grannySmith_apple"></div>
+        <div class="apple" id="honey"><img id="hCrisp" src="appleGraphics/honey_web.png" alt="honeyCrisp_apple"></div>
+        <div class="apple" id="pink"><img id="lady" src="appleGraphics/pink_web.png" alt="cripps_apple"></div>
+        <div class="apple" id="red"><img id="redApp" src="appleGraphics/red_web.png" alt="red_apple"></div>
+    </div>
+
+<!--SECTION FOR POP-UP WINDOWS-->
+<!--AMBROSIA MODAL-->
+    <div id="ambPopup">
+        <span class="ambClose">&times;</span>
+            <h2 class="popAppTitle">Ambrosia Apple</h2>
+            <div class="wrapper">
+                <img src="appleRecipes/1024px-Ambrosia_apples_2017_A1.jpg" style="width: auto; height: 800px; margin: 0px;" alt="ambrosiaRecipe.jpg">
+            <div class="wrapper2">
+                <div class="infoText">
+                    <p>Can be baked into cakes and muffins for a sweeter flavor and more moist texture. This type of apple originated from British Columbia in the 1990s.</p></div>
+
+                <!--SCALE SECTION - FLAVO-METER-->
+                <div class="slide3">
+                    <div class="shrink">
+                        <div class="group2">
+                        <div class="scaleGroup">
+                            <div class="appleSlide">
+                                <!--Slider only for Ambrosia apple-->
+                                <img id="ambData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                            </div>
+                            <br>
+                            <div class="scaleText">
+                                <div class="barText1"><p>Sweet</p></div>
+                                <div class="scalebar"></div>
+                                <div class="barText2"><p>Tart</p></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+ <script>
+    //Hides modal upon opening page.
+    $(document).ready(function () {
+        $('#ambPopup').hide()
+    });
+    //Clickable function for opening modal.
+    $('#amb').on('click', function () {
+        $('#ambPopup').show()
+    });
+    //"X" for closing the modal
+    $('.ambClose').on('click', function() {
+        $('#ambPopup').hide()
+    });
+    //Closing modal by clicking outside modal.
+    $(document).mouseup(function (e) {
+        var ambModal = $("#ambPopup");
+        if (!$('#amb').is(e.target) && !ambModal.is(e.target) && ambModal.has(e.target).length == 0) {
+            ambModal.hide();
+        }
+    });
+</script>
+
+
+<!--FUJI MODAL-->
+<div id="fujPopup">
+    <span class="fujClose">&times;</span>
+    <h2 class="popAppTitle">Fuji Apple</h2>
+    <div class="wrapper">
+        <img src="appleRecipes/appleCrisp.jpg" style="width: auto; height: 800px; margin: 0px;" alt="fujiRecipe.jpg">
+    <div class="wrapper2">
+        <div class="infoText">
+            <p>Capable of retaining a long shelf life. Due to their sweet flavor, they are great choice for making an apple crisp dish.</p>
+        </div>
+
+        <div class="slide3">
+            <div class="shrink">
+                <div class="group2">
+                <div class="scaleGroup">
+                    <div class="appleSlide">
+                        <img id="fujData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                    </div>
+                    <br>
+                    <div class="scaleText">
+                        <div class="barText1"><p>Sweet</p></div>
+                        <div class="scalebar"></div>
+                        <div class="barText2"><p>Tart</p></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+         $('#fujPopup').hide()
+     });
+    
+     $('#fuj').on('click', function () {
+         $('#fujPopup').show()
+     });
+     $('.fujClose').on('click', function() {
+        $('#fujPopup').hide()
+     });
+    
+     $(document).mouseup(function (e) {
+         var fujModal = $("#fujPopup");
+         if (!$('#fuj').is(e.target) && !fujModal.is(e.target) && fujModal.has(e.target).length == 0) {
+            fujModal.hide();
+         }
+     });
+    </script>
+
+<!--GALA MODAL-->
+<div id="galaPopup">
+    <span class="galaClose">&times;</span>
+    <h2 class="popAppTitle">Gala Apple</h2>
+    <div class="wrapper">
+        <img src="appleRecipes/galaRecipe.jpg" style="width: auto; height: 800px; margin: 0px;" alt="galaRecipe.jpg">
+    <div class="wrapper2">
+        <div class="infoText">
+            <p>Best used for applesauce, salad add-ons, and cider drinks. The flavor of sweetness will grow more mild when galas are baked.</p>
+        </div>
+
+        <div class="slide3">
+            <div class="shrink">
+                <div class="group2">
+                <div class="scaleGroup">
+                    <div class="appleSlide">
+                        <img id="galaData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                    </div>
+                    <br>
+                    <div class="scaleText">
+                        <div class="barText1"><p>Sweet</p></div>
+                        <div class="scalebar"></div>
+                        <div class="barText2"><p>Tart</p></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+         $('#galaPopup').hide()
+     });
+    
+     $('#galApple').on('click', function () {
+         $('#galaPopup').show()
+     });
+     $('.galaClose').on('click', function() {
+        $('#galaPopup').hide()
+     });
+    
+     $(document).mouseup(function (e) {
+         var galaModal = $("#galaPopup");
+         if (!$('#galApple').is(e.target) && !galaModal.is(e.target) && galaModal.has(e.target).length == 0) {
+            galaModal.hide();
+         }
+     });
+    </script>
+
+<!--GOLDEN APPLE MODAL-->
+<div id="goldPopup">
+    <span class="goldClose">&times;</span>
+    <h2 class="popAppTitle">Golden delicious Apple</h2>
+    <div class="wrapper">
+        <img src="appleRecipes/goldAppleRecipe2.jpg" style="width: auto; height: 800px; margin: 0px;" alt="goldAppleRecipe.jpg">
+    <div class="wrapper2">
+        <div class="infoText">
+            <p>Used for a wide variety of meals. They can also be baked into breads, cakes, tarts, and crisps. They're often paired with savory foods like vegetables, cheeses, and pork, and even topped on sandwiches.</p>
+        </div>
+
+        <div class="slide3">
+            <div class="shrink">
+                <div class="group2">
+                <div class="scaleGroup">
+                    <div class="appleSlide">
+                        <img id="goldData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                    </div>
+                    <br>
+                    <div class="scaleText">
+                        <div class="barText1"><p>Sweet</p></div>
+                        <div class="scalebar"></div>
+                        <div class="barText2"><p>Tart</p></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+         $('#goldPopup').hide()
+     });
+    
+     $('#gold').on('click', function () {
+         $('#goldPopup').show()
+     });
+     $('.goldClose').on('click', function() {
+        $('#goldPopup').hide()
+     });
+    
+     $(document).mouseup(function (e) {
+         var goldModal = $("#goldPopup");
+         if (!$('#gold').is(e.target) && !goldModal.is(e.target) && goldModal.has(e.target).length == 0) {
+            goldModal.hide();
+         }
+     });
+    </script>
+
+<!--GRANNY SMITH APPLE MODAL-->
+<div id="granPopup">
+    <span class="granClose">&times;</span>
+    <h2 class="popAppTitle">Granny Smith Apple</h2>
+    <div class="wrapper">
+        <img src="appleRecipes/grannyRecipe2.jpg" style="width: auto; height: 800px; margin: 0px;" alt="grannySmithRecipe.jpg">
+    <div class="wrapper2">
+        <div class="infoText">
+            <p>Well known for their sour, tart taste. They are served as a popular treat after being dipped in smooth caramel. This apple was named after its founder, Maria Ann "Granny" Smith, when they were discoved in Australia in 1868.</p>
+        </div>
+
+        <div class="slide3">
+            <div class="shrink">
+                <div class="group2">
+                <div class="scaleGroup">
+                    <div class="appleSlide">
+                        <img id="granData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                    </div>
+                    <br>
+                    <div class="scaleText">
+                        <div class="barText1"><p>Sweet</p></div>
+                        <div class="scalebar"></div>
+                        <div class="barText2"><p>Tart</p></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+         $('#granPopup').hide()
+     });
+    
+     $('#granApp').on('click', function () {
+         $('#granPopup').show()
+     });
+     $('.granClose').on('click', function() {
+        $('#granPopup').hide()
+     });
+    
+     $(document).mouseup(function (e) {
+         var granModal = $("#granPopup");
+         if (!$('#granApp').is(e.target) && !granModal.is(e.target) && granModal.has(e.target).length == 0) {
+            granModal.hide();
+         }
+     });
+    </script>
+
+<!--HONEY CRISP APPLE MODAL-->
+<div id="honeyPopup">
+    <span class="honeyClose">&times;</span>
+    <h2 class="popAppTitle">Honey Crisp Apple</h2>
+    <div class="wrapper">
+        <img src="appleRecipes/applePie.jpg" style="width: auto; height: 800px; margin: 0px;" alt="honeyCrispRecipe.jpg">
+    <div class="wrapper2">
+        <div class="infoText">
+            <p>They maintain their sweetness when cooked and can be baked into crisps and pies. Raw honeycrisp apples are also chopped and added to coleslaw, sandwiches, and salads.</p>
+        </div>
+
+        <div class="slide3">
+            <div class="shrink">
+                <div class="group2">
+                <div class="scaleGroup">
+                    <div class="appleSlide">
+                        <img id="honeyData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                    </div>
+                    <br>
+                    <div class="scaleText">
+                        <div class="barText1"><p>Sweet</p></div>
+                        <div class="scalebar"></div>
+                        <div class="barText2"><p>Tart</p></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+         $('#honeyPopup').hide()
+     });
+    
+     $('#hCrisp').on('click', function () {
+         $('#honeyPopup').show()
+     });
+     $('.honeyClose').on('click', function() {
+        $('#honeyPopup').hide()
+     });
+    
+     $(document).mouseup(function (e) {
+         var honeyModal = $("#honeyPopup");
+         if (!$('#hCrisp').is(e.target) && !honeyModal.is(e.target) && honeyModal.has(e.target).length == 0) {
+            honeyModal.hide();
+         }
+     });
+    </script>
+
+<!--PINK LADY APPLE MODAL-->
+<div id="pinkPopup">
+    <span class="pinkClose">&times;</span>
+    <h2 class="popAppTitle">Cripps Pink Apple</h2>
+    <div class="wrapper">
+        <img src="appleRecipes/Apples,_'Lady_Laura'.jpg" style="width: auto; height: 800px; margin: 0px;" alt="pinkLadyRecipe.jpg">
+    <div class="wrapper2">
+        <div class="infoText">
+            <p>Because they are sold under the trademark name "Pink Lady &trade;", the alternative name for these apples is Cripps Pink. Usually simmered in wind and paired with nutmeg, vanilla and cinnamon. Despite having more of a sweet-tart flavor, they can add sweetness to applesauce and purees.</p>
+        </div>
+
+        <div class="slide3">
+            <div class="shrink">
+                <div class="group2">
+                <div class="scaleGroup">
+                    <div class="appleSlide">
+                        <img id="pinkData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                    </div>
+                    <br>
+                    <div class="scaleText">
+                        <div class="barText1"><p>Sweet</p></div>
+                        <div class="scalebar"></div>
+                        <div class="barText2"><p>Tart</p></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+         $('#pinkPopup').hide()
+     });
+    
+     $('#lady').on('click', function () {
+         $('#pinkPopup').show()
+     });
+     $('.pinkClose').on('click', function() {
+        $('#pinkPopup').hide()
+     });
+    
+     $(document).mouseup(function (e) {
+         var pinkModal = $("#pinkPopup");
+         if (!$('#lady').is(e.target) && !pinkModal.is(e.target) && pinkModal.has(e.target).length == 0) {
+            pinkModal.hide();
+         }
+     });
+    </script>
+
+<!--RED DELICIOUS APPLE MODAL-->
+<div id="redPopup">
+    <span class="redClose">&times;</span>
+    <h2 class="popAppTitle">Red Delicious Apple</h2>
+    <div class="wrapper">
+        <img src="appleRecipes/CinnamonAppleSauceInBowlGettyImages475714223.jpg" style="width: auto; height: 800px; margin: 0px;" alt="redAppleRecipe.jpg">
+    <div class="wrapper2">
+        <div class="infoText">
+            <p>Their skin contains more antioxidants than any other variety of apple. It's better to prepare them fresh as cooking them ruins the solidity of the flesh. However, they can be pureed and slow-cooked when making soups and sauces.</p>
+        </div>
+
+        <div class="slide3">
+            <div class="shrink">
+                <div class="group2">
+                <div class="scaleGroup">
+                    <div class="appleSlide">
+                        <img id="redData" src="appleGraphics/apple_W_arrow.svg" alt="apple_Graphic_svg">
+                    </div>
+                    <br>
+                    <div class="scaleText">
+                        <div class="barText1"><p>Sweet</p></div>
+                        <div class="scalebar"></div>
+                        <div class="barText2"><p>Tart</p></div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+         $('#redPopup').hide()
+     });
+    
+     $('#redApp').on('click', function () {
+         $('#redPopup').show()
+     });
+     $('.redClose').on('click', function() {
+        $('#redPopup').hide()
+     });
+    
+     $(document).mouseup(function (e) {
+         var redModal = $("#redPopup");
+         if (!$('#redApp').is(e.target) && !redModal.is(e.target) && redModal.has(e.target).length == 0) {
+            redModal.hide();
+         }
+     });
+    </script>
+<footer style="text-align: center; font-size: 2em;">Created by Marceia Patterson, 2021</footer>
+
+</body>
+</html>
