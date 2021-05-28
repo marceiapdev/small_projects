@@ -1,0 +1,154 @@
+@media screen and (max-width: 1024px) {
+
+  .columnContainer {
+    margin-left: 300px;
+    margin: 0 auto;
+    }
+}
+
+/* Slideshow container */
+* {
+  box-sizing: border-box;
+  position: relative;
+  align-content: center;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body {
+	background-color: #ffb5d0;
+  margin: auto;
+  text-align: center;
+  height: 10em;
+  color: black; !important
+}
+
+/*Title styles*/
+#welcome {
+  text-align: center;
+	font-size: 5em;
+  background-color: #e85a66;
+	font-family: 'Vidaloka', serif;
+}
+
+/*Styles for header2*/
+#bannerText {
+	  font-size: 4em;
+	  background-color: #e85a66;
+    font-family: 'Dancing Script'; !important
+    }
+
+  /* Don't give fixed widths the elements. Do them here.*/
+.slidePic {
+  width: 100%;
+  margin: auto;
+  border: black 15px solid;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.decorLine {
+  border-width: 2px;
+  border-color: transparent;
+  width:50%; 
+  border-top: dotted 10px rgb(0, 0, 0); 
+  border-bottom: solid 10px rgb(0, 0, 0);
+  margin: auto;
+}
+
+
+.sweet-slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+}
+
+  .storeInfo {
+    margin-right: 10px;
+    font-size: 1.50em;
+    font-family:'Vidaloka', serif;
+  }
+  /*IDs can be used to identify one element, whereas a class can be used to identify more than one.*/
+  .menuTitle {
+    font-family: 'Dancing Script'; 
+    /* font-size: 4em; */
+    background-color: #e85a66; 
+    justify-content: center;
+  }
+  
+  #menuItem {
+    font-size: 1.5em; 
+    font-family: 'Vidaloka', serif;
+    justify-content: center;
+  }
+  
+  #menuDesc {
+    font-size: 25px; 
+    font-style: italic;
+    justify-content: center;
+  }
+
+  .menuHeading {
+    font-size: 4em; 
+    font-weight: bold;
+  }
+  
+  /* Proper CSS for images*/
+  img.large {
+    width: 500px;
+    height: auto;
+    justify-content: center;
+    max-width: 960px;
+    border: 16px solid transparent;
+    border-color: black;
+  
+  }
+  
+  .columnMain {
+      margin: 0 auto;
+      width: 100%;
+      text-align: center;
+      /*IMPORTANT. Fixes the title menu color BG. :D */
+      position: relative;
+  }
+
+  /*Column styles.*/
+.myColumn {
+  float: left;
+  word-wrap: break-word;
+  width: 500px;
+  margin: 20px;
+  margin-left: 170px;
+  
+}
+
+/* Clear floats after the columns */
+.myRow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#contact {
+  float: left;
+  word-wrap: break-word;
+  max-width: 500px;
+  margin: 50px;
+  margin-right: 80px;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<!--A website by Marceia Patterson-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweety Treats</title>
+
+	<!--BOOTSTRAP-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+	<!--My Style Sheet-->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <!--FONTS-->
+    <link href='https://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Vidaloka&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <header>
+        <h1 id="welcome">Welcome to Sweety Treats!</h1>
+        <h2 id="bannerText">Cakes &bull; Cookies &bull; Pastries</h2>
+    </header>
+<br>
+<!--SLIDESHOW-->
+<div class="sweet-slideshow-container">
+	<img class="mySlides slidePic" src="myPics/cakeMain.jpg">
+	<img class="mySlides slidePic" src="myPics/cinnabunMain.jpg">
+	<img class="mySlides slidePic" src="myPics/cookieMain.jpg">
+</div>
+<!--Slideshow Script-->  
+<script>
+	var slideIndex = 0;
+	carousel();
+
+	function carousel() {
+	var i;
+	var x = document.getElementsByClassName("mySlides");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	slideIndex++;
+	if (slideIndex > x.length) {slideIndex = 1}
+	x[slideIndex-1].style.display = "block";
+	setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+</script>
+<br>
+<!--MENU SECTION-->
+<div><p style="font-size: 4em; font-family: 'Vidaloka', serif; ">Dessert Menu</p></div>
+<!--Decorative line-->
+<div class="decorLine"></div>
+<br>
+<div class="menuTitle"><h3 class="menuHeading">Cakes</h3></div>
+<br>
+<!--NEEDS A CONTAINER FOR THE WHOLE MENU-->
+<!--Cakes Grid-->
+<div class="container-fluid">
+	<div class="row align-items-start">
+	  <div class="col">
+		<img src="myPics/redveletcake_web.jpg" class="img-fluid border border-dark border border-5" alt="redveletcake.jpg">
+		<div id="menuItem"><h2>Red Velvet Cake</h2></div>
+		<div id="menuDesc"><p>Devilishly moist cake topped with rich cream cheese frosting.</p></div>
+		<h2>$2.50</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/chocolateCake_web.jpg" class="img-fluid border border-dark border border-5" alt="chocolatecake.jpg">
+				<div id="menuItem"><h2>Double Chocolate Cake</h2></div>
+				<div id="menuDesc"><p>Fudgey cake with milk chocolate icing and topped with dark chocolate shavings.</p></div>
+				<h2>$2.50</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/bdaycake_web.jpg" class="img-fluid border border-dark border border-5" alt="birthdaycake.jpg">
+				<div id="menuItem"><h2>Birthday Fun-fetti Cake</h2></div>
+				<div id="menuDesc"><p>Vanilla cake with buttercream frosting and sprinkled with rainbow candies.</p></div>
+				<h2>$2.50</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/strawberryCake_web.jpg" class="img-fluid border border-dark border border-5" alt="strawberrycake.jpg">
+				<div id="menuItem"><h2>Strawberry Supreme</h2></div>
+				<div id="menuDesc"><p>Creamy strawberry cake served with fresh strawberries.</p></div>
+				<h2>$2.50</h2>
+	  </div>
+	</div>
+  </div>
+<!--END CAKE SECTION-->
+  <br>
+<!--Pastries Grid-->
+<div class="menuTitle"><h3 class="menuHeading">Pastries</h3></div>
+<br>
+<div class="container-fluid">
+	<div class="row align-items-start">
+	  <div class="col">
+		<img src="myPics/croissant_web.jpg" class="img-fluid border border-dark border border-5" alt="croissant.jpg">
+				<div id="menuItem"><h2>Croissants</h2></div>
+				<div id="menuDesc"><p>Buttery, flaky bread treat with a light sweet glaze.</p></div>
+				<h2>$2.00</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/danish_web.jpg" class="img-fluid border border-dark border border-5" alt="danishes.jpg">
+				<div id="menuItem"><h2>Danishes</h2></div>
+				<div id="menuDesc"><p>Two versions of the classic pastry; one with a cream cheese center and one with fruit.</p></div>
+				<h2>$2.00</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/blumuffin_web.jpg" class="img-fluid border border-dark border border-5" alt="blueberrymuffin.jpg">
+				<div id="menuItem"><h2>Blueberry Muffin</h2></div>
+				<div id="menuDesc"><p>A scrumptious muffin packed with fresh blueberries.</p></div>
+				<h2>$1.50</h2>
+	  </div>
+	</div>
+<!--Next Row-->
+	<div class="row align-items-start">
+		<div class="col">
+		  <img src="myPics/cinnabunMain.jpg" class="img-fluid border border-dark border border-5" alt="cinnamonbun.jpg">
+				  <div id="menuItem"><h2>Cinnamon Bun</h2></div>
+				  <div id="menuDesc"><p>An ooey-gooey cinnamon dusted bun drizzled with warm cream cheese icing.</p></div>
+				  <h2>$3.50</h2>
+		</div>
+		<div class="col">
+		  <img src="myPics/bananaNut_web.jpg" class="img-fluid border border-dark border border-5" alt="bananamuffin.jpg">
+				  <div id="menuItem"><h2>Banana Nut Muffin</h2></div>
+				  <div id="menuDesc"><p>A sweet banana flavored muffin mixed with crunchy nuts.</p></div>
+				  <h2>$1.50</h2>
+		</div>
+		<div class="col">
+		  <img src="myPics/tiramisu_web.jpg" class="img-fluid border border-dark border border-5" alt="tiramisu.jpg">
+				  <div id="menuItem"><h2>Tiramisu</h2></div>
+				  <div id="menuDesc"><p>An Italian favorite, a coffee flavored layered dessert coated with cocoa powder.</p></div>
+				  <h2>$3.00</h2>
+		</div>
+	  </div>
+</div>
+
+<!--END CAKE SECTION-->
+<br>
+<!--Cookies Grid-->
+<div class="menuTitle"><h3 class="menuHeading">Cookies</h3></div>
+<br>
+<div class="container-fluid">
+	<div class="row align-items-start">
+	  <div class="col">
+		<img src="myPics/chocochipcookie_web.jpg" class="img-fluid border border-dark border border-5" alt="chocolatechipcookie.jpg">
+		<div id="menuItem"><h2>Chocolate Chip Cookie</h2></div>
+		<div id="menuDesc"><p>Chewy cookies packed with chocolate morsels.</p></div>
+		<h2>$1.00</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/oatmealCookie_web.jpg" class="img-fluid border border-dark border border-5" alt="oatmealraisincookie.jpg">
+		<div id="menuItem"><h2>Oatmeal Raisin Cookie</h2></div>
+		<div id="menuDesc"><p>Oats, nuts, spices, and delicious raisins all rolled up and baked into cookies.</p></div>
+		<h2>$1.00</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/snickerdoodle_web.jpg" class="img-fluid border border-dark border border-5" alt="snickerdoodlecookie.jpg">
+				<div id="menuItem"><h2>Snickerdoodle Cookie</h2></div>
+				<div id="menuDesc"><p>A tasty cookie sprinkled with cinnamon sugar.</p></div>
+				<h2>$1.00</h2>
+	  </div>
+	  <div class="col">
+		<img src="myPics/whiteMac_web.jpg" class="img-fluid border border-dark border border-5" alt="whitechocolate_macadamiacookie.jpg">
+				<div id="menuItem"><h2>White Chocolate Macadamia Cookie</h2></div>
+				<div id="menuDesc"><p>Decadent cookies with white-chocolate chunks and Macadamia Nuts.</p></div>
+				<h2>$1.00</h2>
+	  </div>
+	</div>
+  </div>
+<!--END MENU-->
+<br>
+<div><p style="font-size: 4em; font-family: 'Vidaloka', serif;">Contact Info & Reviews</p></div>
+<div class="decorLine"></div>
+<br>
+	<div class="container">
+		<div class="row align-items-start">
+		  <div class="col">
+			<u><h3 style="font-size: 2.5em; font-family: 'Vidaloka', serif;">Phone and Email</h3></u>					
+				<div class="storeInfo">
+					<span style='font-size:75px;'>&#9742;</span>
+					<p>555-555-CAKE</p>
+					<span style='font-size:75px;'>&#9993;</span>
+					<p>sweetytreats@eats.com</p>
+				</div>
+		  </div>
+		  <div class="col">
+			<u><h3 style="font-size: 2.5em; font-family: 'Vidaloka', serif;">Store Info</h3></u>
+			<div class="container">
+				<div class="row align-items-start">
+					<div class="col">
+						<div class="storeInfo">
+						<ul style="list-style-type:none;">
+							<li>Monday</li>
+							<li>Tuesday</li>
+							<li>Wednesday</li>
+							<li>Thursday</li>
+							<li>Friday</li>
+							<li>Saturday</li>
+							<li>Sunday</li>
+						</ul>
+					</div>
+					  </div>
+					  <div class="col">
+						<div class="storeInfo">
+						<ul style="list-style-type:none;">
+							<li>10am-9pm</li>
+							<li>10am-9pm</li>
+							<li>10am-9pm</li>
+							<li>10am-9pm</li>
+							<li>10am-9pm</li>
+							<li>12pm-8pm</li>
+							<li>CLOSED</li>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		  </div>
+		  <div class="col">
+			<u><h3 style="font-size: 2.5em; font-family: 'Vidaloka', serif;">Reviews</h3></u>					
+				<p style="font-style:italic; font-size: 24px;";>“Best home-baked goods ever! I love that the cinnamon buns are served fresh and warm!”</p>
+				<p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+				<p style="font-style:italic; font-size: 24px;";>“My daughter and her friends absolutely loved the birthday cake Sweet Treats made for us!”</p>
+				<p>&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+				<p style="font-style:italic; font-size: 24px;";>I wanna throw out that they offer gluten free products! You guys rock!!</p>
+				<p>&#9733;&#9733;&#9733;&#9733;</p>
+		  </div>
+		</div>
+<footer>
+	<p>A website by Marceia Patterson &copy; 2020</p>
+</footer>
+</body>
+</html>
